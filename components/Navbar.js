@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 const Navbar = () => {
   const pathname = usePathname();
   return (
@@ -32,7 +33,10 @@ const Navbar = () => {
               </a>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-              Button
+              <Link href="https://nextjs.org/docs/app/api-reference/functions/use-router">
+                NextDocs
+              </Link>
+            
               <svg
                 fill="none"
                 stroke="currentColor"
