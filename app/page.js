@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 export default function Home() {
   const searchParams = useSearchParams();
@@ -40,8 +41,10 @@ export default function Home() {
         </div>
       </section>
       <div className="search">
+        <Suspense>
         you are requesting name which is {searchParams.get('blog')} and utm_source is\
         {searchParams.get('utm_source')}
+        </Suspense>
       </div>
     </div>
   );
