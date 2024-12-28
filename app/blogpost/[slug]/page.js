@@ -1,12 +1,17 @@
 "use client";
 import { useParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Page = () => {
   const params = useParams();
   const router = useRouter();
 
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/abcd");
+    }, 3000);
+  },[]);
   return (
     <div>
       {params?.slug ? (
@@ -14,7 +19,6 @@ const Page = () => {
       ) : (
         <div>No slug found!</div>
       )}
-
       <button type="button" onClick={() => router.push("/about")}>
         Dashboard
       </button>
