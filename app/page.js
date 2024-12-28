@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
-
+import { useSearchParams } from "next/navigation";
 export default function Home() {
+  const searchParams = useSearchParams();
   return (
     <div className="">
       <section className="text-gray-600 body-font">
@@ -37,6 +39,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="search">
+        you are requesting name which is {searchParams.get('blog')} and utm_source is\
+        {searchParams.get('utm_source')}
+      </div>
     </div>
   );
 }
