@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div >
+    <div>
       <div>
         <header class="bg-green-200 text-gray-600 body-font">
           <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
@@ -13,9 +13,9 @@ const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
                 viewBox="0 0 24 24"
               >
@@ -34,9 +34,9 @@ const Navbar = () => {
               <svg
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 class="w-4 h-4 ml-1"
                 viewBox="0 0 24 24"
               >
