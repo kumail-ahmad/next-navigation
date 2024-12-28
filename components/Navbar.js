@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div>
+    <div >
       <div>
         <header className="bg-green-200 text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
         </header>
       </div>
-      <div>You are at {pathname}</div>
+      <div className="">You are at {pathname}</div>
     </div>
   );
 };
