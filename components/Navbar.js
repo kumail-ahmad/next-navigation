@@ -1,7 +1,13 @@
+"use client";
 import React from "react";
-
+import { usePathname } from "next/navigation";
 const Navbar = () => {
-  return <div>I am a navbar</div>;
+  const pathname = usePathname();
+  return (
+    <div>
+      <div>I am Navbar</div>
+      <div>You are at {pathname}</div>
+    </div>
+  );
 };
-
 export default Navbar;
