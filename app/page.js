@@ -7,6 +7,7 @@ export default function Home() {
     const searchParams = useSearchParams();
     const blogName = searchParams.get("blog");
     const utmSource = searchParams.get("utm_source");
+    console.log("Client side enabled ");
     return (
       <div className="">
         <section className="text-gray-600 body-font">
